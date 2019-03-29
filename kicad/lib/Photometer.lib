@@ -1,0 +1,16 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Photometer
+#
+DEF Photometer A 0 40 Y Y 1 F N
+F0 "A" 0 0 50 H V C CNN
+F1 "Photometer" 0 200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -250 250 250 -250 0 1 0 f
+ENDDRAW
+ENDDEF
+#
+#End Library
