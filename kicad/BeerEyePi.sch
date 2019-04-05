@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:BeerEyePi-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -150,9 +150,9 @@ Wire Wire Line
 	6200 4450 6550 4450
 Text GLabel 2550 3400 0    50   Output ~ 0
 LED_CURRENT
-Text GLabel 2550 3600 0    50   BiDi ~ 0
+Text GLabel 4550 3600 2    50   BiDi ~ 0
 SDA1
-Text GLabel 4550 3600 2    50   Output ~ 0
+Text GLabel 2550 3600 0    50   Output ~ 0
 SCL1
 Text GLabel 4550 3000 2    50   BiDi ~ 0
 SDA2
@@ -258,26 +258,15 @@ Wire Wire Line
 Wire Wire Line
 	13050 8800 13100 8800
 $Comp
-L Connector:Conn_01x04_Male J7
-U 1 1 5BC1EEAD
-P 12000 8450
-F 0 "J7" H 12000 8650 50  0000 C CNN
-F 1 "TransSensor" V 11900 8400 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 12000 8450 50  0001 C CNN
-F 3 "~" H 12000 8450 50  0001 C CNN
-	1    12000 8450
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_01x04_Female J4
 U 1 1 5BC1FF9A
-P 10100 8500
-F 0 "J4" H 10100 8700 50  0000 R CNN
-F 1 "TransSensor" V 10200 8450 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 10100 8500 50  0001 C CNN
-F 3 "~" H 10100 8500 50  0001 C CNN
-	1    10100 8500
-	1    0    0    -1  
+P 10100 8600
+F 0 "J4" H 10100 8800 50  0000 R CNN
+F 1 "TransSensor" V 10200 8550 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 10100 8600 50  0001 C CNN
+F 3 "~" H 10100 8600 50  0001 C CNN
+	1    10100 8600
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	14200 7900 12900 7900
@@ -1576,4 +1565,15 @@ F 3 "https://docs.broadcom.com/docs/AV02-4186EN" H 14150 6150 50  0001 C CNN
 $EndComp
 Text Notes 11950 10400 0    98   ~ 20
 Beer-Eye Pi v. 0.1a\nCC BY-SA H.-C. Ahlswede
+$Comp
+L Connector:Conn_01x04_Male J7
+U 1 1 5BC1EEAD
+P 12000 8450
+F 0 "J7" H 12000 8650 50  0000 C CNN
+F 1 "TransSensor" V 11900 8400 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 12000 8450 50  0001 C CNN
+F 3 "~" H 12000 8450 50  0001 C CNN
+	1    12000 8450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
