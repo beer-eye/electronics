@@ -235,29 +235,6 @@ F 3 "" H 9400 8850 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C5
-U 1 1 5BBF7D9F
-P 14200 8500
-F 0 "C5" H 14108 8454 50  0000 R CNN
-F 1 "100n" H 14108 8545 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 14200 8500 50  0001 C CNN
-F 3 "~" H 14200 8500 50  0001 C CNN
-	1    14200 8500
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	14200 8400 14200 8200
-Wire Wire Line
-	14200 8200 14100 8200
-Wire Wire Line
-	14200 8600 14200 8800
-Wire Wire Line
-	14200 8800 14100 8800
-Wire Wire Line
-	13050 8200 13100 8200
-Wire Wire Line
-	13050 8800 13100 8800
-$Comp
 L Connector:Conn_01x04_Female J4
 U 1 1 5BC1FF9A
 P 10100 8600
@@ -268,16 +245,6 @@ F 3 "~" H 10100 8600 50  0001 C CNN
 	1    10100 8600
 	1    0    0    1   
 $EndComp
-Wire Wire Line
-	14200 7900 12900 7900
-Wire Wire Line
-	14200 7900 14200 8200
-Connection ~ 14200 8200
-Wire Wire Line
-	14200 8800 14200 9100
-Wire Wire Line
-	14200 9100 12900 9100
-Connection ~ 14200 8800
 Text GLabel 2700 6600 0    50   BiDi ~ 0
 SDA2
 Text GLabel 2700 7200 0    50   Output ~ 0
@@ -435,30 +402,6 @@ F 3 "~" H 3050 8700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	13050 8200 13050 8350
-Wire Wire Line
-	13050 8350 12200 8350
-Wire Wire Line
-	13050 8800 13050 8650
-Wire Wire Line
-	13050 8650 12200 8650
-Wire Wire Line
-	12200 8450 12650 8450
-Wire Wire Line
-	12650 8450 12750 8550
-Wire Wire Line
-	12750 8550 12900 8550
-Wire Wire Line
-	12900 8550 12900 9100
-Wire Wire Line
-	12200 8550 12650 8550
-Wire Wire Line
-	12650 8550 12750 8450
-Wire Wire Line
-	12750 8450 12900 8450
-Wire Wire Line
-	12900 8450 12900 7900
-Wire Wire Line
 	9900 8600 9600 8600
 Wire Wire Line
 	9600 8600 9500 8500
@@ -544,17 +487,6 @@ Wire Wire Line
 Wire Wire Line
 	2550 3400 3300 3400
 $Comp
-L VEML:VEML7700 U4
-U 1 1 5BC11FFA
-P 13600 8600
-F 0 "U4" H 13600 9200 50  0000 C CNN
-F 1 "VEML7700" H 13600 8200 50  0000 C CNN
-F 2 "VEML:VEML7700_HandSoldering" H 13600 8600 50  0001 C CNN
-F 3 "" H 13600 8600 50  0001 C CNN
-	1    13600 8600
-	-1   0    0    -1  
-$EndComp
-$Comp
 L VEML:VEML7700 U1
 U 1 1 5BC1264F
 P 3400 7000
@@ -606,34 +538,6 @@ F 3 "~" H 4200 2750 50  0001 C CNN
 	1    4200 2750
 	-1   0    0    -1  
 $EndComp
-$Comp
-L power:PWR_FLAG #FLG06
-U 1 1 5BCFEA80
-P 12800 9100
-F 0 "#FLG06" H 12800 9175 50  0001 C CNN
-F 1 "PWR_FLAG" V 12800 9228 50  0000 L CNN
-F 2 "" H 12800 9100 50  0001 C CNN
-F 3 "~" H 12800 9100 50  0001 C CNN
-	1    12800 9100
-	0    -1   1    0   
-$EndComp
-$Comp
-L power:PWR_FLAG #FLG05
-U 1 1 5BCFEB3F
-P 12800 7900
-F 0 "#FLG05" H 12800 7975 50  0001 C CNN
-F 1 "PWR_FLAG" V 12800 8028 50  0000 L CNN
-F 2 "" H 12800 7900 50  0001 C CNN
-F 3 "~" H 12800 7900 50  0001 C CNN
-	1    12800 7900
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	12800 7900 12900 7900
-Connection ~ 12900 7900
-Wire Wire Line
-	12800 9100 12900 9100
-Connection ~ 12900 9100
 Wire Wire Line
 	4200 2900 3850 2900
 Wire Wire Line
@@ -641,28 +545,6 @@ Wire Wire Line
 Connection ~ 4200 2900
 Wire Wire Line
 	4200 2750 4200 2900
-$Comp
-L Device:LED_RGB D1
-U 1 1 5BCFD080
-P 12900 4650
-F 0 "D1" H 12900 5147 50  0000 C CNN
-F 1 "LED_RGB" H 12900 5056 50  0000 C CNN
-F 2 "LED-PLCC:PLCC6-3528" H 12900 4600 50  0001 C CNN
-F 3 "~" H 12900 4600 50  0001 C CNN
-	1    12900 4650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13100 4450 13200 4450
-Wire Wire Line
-	13200 4450 13200 4650
-Wire Wire Line
-	13200 4650 13100 4650
-Wire Wire Line
-	13200 4650 13200 4850
-Wire Wire Line
-	13200 4850 13100 4850
-Connection ~ 13200 4650
 $Comp
 L Connector:Conn_01x04_Female J3
 U 1 1 5BD1D804
@@ -674,236 +556,10 @@ F 3 "~" H 10100 4550 50  0001 C CNN
 	1    10100 4550
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x04_Male J5
-U 1 1 5BD1E72E
-P 12000 4550
-F 0 "J5" H 12000 4750 50  0000 C CNN
-F 1 "RGB_LED" V 11900 4500 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 12000 4550 50  0001 C CNN
-F 3 "~" H 12000 4550 50  0001 C CNN
-	1    12000 4550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12200 4650 12700 4650
-Wire Wire Line
-	12200 4750 12300 4750
-Wire Wire Line
-	12300 4750 12300 4850
-Wire Wire Line
-	12300 4850 12700 4850
-Wire Wire Line
-	13200 4850 13200 5050
-Wire Wire Line
-	13200 5050 12400 5050
-Wire Wire Line
-	12400 5050 12400 4550
-Wire Wire Line
-	12400 4550 12200 4550
-Connection ~ 13200 4850
-Text Notes 13000 4100 0    50   ~ 0
-RGB-LED PLCC6 3.5x2.8\ne.g.\nVLMRGB6112-00-GS08\nSMLVN6RGB
-$Comp
-L Connector:Conn_01x04_Male J6
-U 1 1 5BD0562E
-P 12000 6600
-F 0 "J6" H 12000 6800 50  0000 C CNN
-F 1 "RGB_LED" V 11900 6550 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 12000 6600 50  0001 C CNN
-F 3 "~" H 12000 6600 50  0001 C CNN
-	1    12000 6600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14450 6600 14350 6600
-Wire Wire Line
-	13900 6600 13950 6600
-Wire Wire Line
-	13900 6400 13950 6400
-Wire Wire Line
-	12200 4450 12700 4450
 Wire Wire Line
 	4000 7200 4000 7350
 Wire Wire Line
 	4000 6450 4000 6600
-Text Notes 13850 6150 0    50   ~ 0
-RGB-LED: PLCC4 3.2x2.8\ne.g.\nASMB-MTB0-0A3A2\nASMB-MTB1-0A3A2
-Text Label 13200 6350 0    50   ~ 0
-PLCC4_1
-Text Label 13200 6850 0    50   ~ 0
-PLCC4_2
-Text Label 13900 6600 2    50   ~ 0
-PLCC4_3
-Text Label 13200 6250 0    50   ~ 0
-PLCC4_4
-Text Label 13900 6400 2    50   ~ 0
-PLCC4_4
-Text Label 14450 6600 0    50   ~ 0
-PLCC4_1
-Text Label 13200 7050 0    50   ~ 0
-PLCC4_3
-Text Label 13900 6800 2    50   ~ 0
-PLCC4_2
-Wire Wire Line
-	13900 6800 13950 6800
-$Comp
-L Jumper:SolderJumper_3_Open JP1
-U 1 1 5BD8C491
-P 12500 6600
-F 0 "JP1" V 12454 6668 50  0000 L CNN
-F 1 "CA2" V 12545 6668 50  0000 L CNN
-F 2 "Jumper:SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm" H 12500 6600 50  0001 C CNN
-F 3 "~" H 12500 6600 50  0001 C CNN
-	1    12500 6600
-	0    1    1    0   
-$EndComp
-$Comp
-L Jumper:SolderJumper_3_Open JP2
-U 1 1 5BD8C72D
-P 12950 6600
-F 0 "JP2" V 12904 6668 50  0000 L CNN
-F 1 "CA1" V 12995 6668 50  0000 L CNN
-F 2 "Jumper:SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm" H 12950 6600 50  0001 C CNN
-F 3 "~" H 12950 6600 50  0001 C CNN
-	1    12950 6600
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	13200 6350 12950 6350
-Wire Wire Line
-	12500 6350 12500 6400
-Wire Wire Line
-	12950 6400 12950 6350
-Connection ~ 12950 6350
-Wire Wire Line
-	12950 6350 12500 6350
-Wire Wire Line
-	13200 6850 12950 6850
-Wire Wire Line
-	12500 6850 12500 6800
-Wire Wire Line
-	12950 6800 12950 6850
-Connection ~ 12950 6850
-Wire Wire Line
-	12950 6850 12500 6850
-Wire Wire Line
-	12200 6600 12350 6600
-Wire Wire Line
-	12750 6600 12800 6600
-Wire Wire Line
-	12200 6700 12400 6700
-Wire Wire Line
-	12750 6950 12750 6600
-Wire Wire Line
-	12400 6950 12750 6950
-Wire Wire Line
-	12400 6700 12400 6950
-Wire Wire Line
-	13200 7050 12300 7050
-Wire Wire Line
-	12300 7050 12300 6800
-Wire Wire Line
-	12400 6500 12400 6250
-Wire Wire Line
-	12400 6250 13200 6250
-Wire Wire Line
-	12200 6500 12400 6500
-Wire Wire Line
-	12200 6800 12300 6800
-Text Label 12900 5200 2    50   ~ 0
-PLCC6_ANODE
-Wire Wire Line
-	12900 5200 13200 5200
-Wire Wire Line
-	13200 5200 13200 5050
-Connection ~ 13200 5050
-$Comp
-L Mechanical:MountingHole H3
-U 1 1 5BDAE0F2
-P 14200 7750
-F 0 "H3" H 14300 7796 50  0000 L CNN
-F 1 "RecoveryHole" H 14300 7705 50  0000 L CNN
-F 2 "Drill:Drill_1.0mm" H 14200 7750 50  0001 C CNN
-F 3 "~" H 14200 7750 50  0001 C CNN
-	1    14200 7750
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H4
-U 1 1 5BDAEA29
-P 14200 9250
-F 0 "H4" H 14300 9296 50  0000 L CNN
-F 1 "RecoveryHole" H 14300 9205 50  0000 L CNN
-F 2 "Drill:Drill_1.0mm" H 14200 9250 50  0001 C CNN
-F 3 "~" H 14200 9250 50  0001 C CNN
-	1    14200 9250
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H1
-U 1 1 5BDAEAF9
-P 13350 4450
-F 0 "H1" H 13450 4496 50  0000 L CNN
-F 1 "RecoveryHole" H 13450 4405 50  0000 L CNN
-F 2 "Drill:Drill_1.0mm" H 13350 4450 50  0001 C CNN
-F 3 "~" H 13350 4450 50  0001 C CNN
-	1    13350 4450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H2
-U 1 1 5BDAEDD8
-P 13350 4850
-F 0 "H2" H 13450 4896 50  0000 L CNN
-F 1 "RecoveryHole" H 13450 4805 50  0000 L CNN
-F 2 "Drill:Drill_1.0mm" H 13350 4850 50  0001 C CNN
-F 3 "~" H 13350 4850 50  0001 C CNN
-	1    13350 4850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H5
-U 1 1 5BDAEF96
-P 14450 6400
-F 0 "H5" H 14550 6446 50  0000 L CNN
-F 1 "RecoveryHole" H 14550 6355 50  0000 L CNN
-F 2 "Drill:Drill_1.0mm" H 14450 6400 50  0001 C CNN
-F 3 "~" H 14450 6400 50  0001 C CNN
-	1    14450 6400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H6
-U 1 1 5BDAF0E1
-P 14450 6800
-F 0 "H6" H 14550 6846 50  0000 L CNN
-F 1 "RecoveryHole" H 14550 6755 50  0000 L CNN
-F 2 "Drill:Drill_1.0mm" H 14450 6800 50  0001 C CNN
-F 3 "~" H 14450 6800 50  0001 C CNN
-	1    14450 6800
-	1    0    0    -1  
-$EndComp
-Text Notes 12300 7550 0    50   ~ 10
-Module: Transmission Sensor
-Text Notes 12300 3700 0    50   ~ 10
-Module: PLCC6 RGB-LED
-Text Notes 12300 5650 0    50   ~ 10
-Module: PLCC4 RGB-LED
-Text Notes 12400 6200 0    50   ~ 0
-Connect Jumpers\naccording to pinout\nof PLCC4 RGB-LED.
-Text Notes 14400 5150 0    50   ~ 0
-Use either of\nthese modules
-Wire Notes Line style solid
-	14350 4950 14350 5200
-Wire Notes Line style solid
-	14350 5200 15000 5200
-Wire Notes Line style solid
-	15000 5200 15000 4950
-Wire Notes Line style solid
-	11800 6650 11550 6650
-Wire Notes Line style solid
-	15000 4950 14350 4950
 Text Notes 2850 6150 0    50   ~ 0
 Reference Sensor
 Text Notes 2700 2450 0    50   ~ 0
@@ -935,7 +591,7 @@ L Device:Q_NMOS_GSD Q1
 U 1 1 5BE1D5C5
 P 8300 5300
 F 0 "Q1" H 8200 5450 50  0000 L CNN
-F 1 "IRLML2502" V 8550 5300 50  0000 C CNN
+F 1 "CPH3456" V 8550 5300 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 8500 5400 50  0001 C CNN
 F 3 "~" H 8300 5300 50  0001 C CNN
 	1    8300 5300
@@ -946,7 +602,7 @@ L Device:Q_NMOS_GSD Q2
 U 1 1 5BE1E029
 P 8750 5650
 F 0 "Q2" H 8650 5800 50  0000 L CNN
-F 1 "IRLML2502" V 9000 5650 50  0000 C CNN
+F 1 "CPH3456" V 9000 5650 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 8950 5750 50  0001 C CNN
 F 3 "~" H 8750 5650 50  0001 C CNN
 	1    8750 5650
@@ -957,7 +613,7 @@ L Device:Q_NMOS_GSD Q3
 U 1 1 5BE1E0A1
 P 9200 6000
 F 0 "Q3" H 9100 6150 50  0000 L CNN
-F 1 "IRLML2502" V 9450 6000 50  0000 C CNN
+F 1 "CPH3456" V 9450 6000 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 9400 6100 50  0001 C CNN
 F 3 "~" H 9200 6000 50  0001 C CNN
 	1    9200 6000
@@ -1091,7 +747,7 @@ Wire Wire Line
 Wire Wire Line
 	8850 6600 8850 6650
 Text Notes 10100 5800 0    50   ~ 0
-Some possible alternatives:\nCPH3456 (ESD protected)\nIRLML6244/IRLML6246\nIRLML6344/IRLML6346
+Some possible alternatives:\nIRLML2502\nIRLML6244/IRLML6246\nIRLML6344/IRLML6346
 $Comp
 L Device:R R7
 U 1 1 5C4F1869
@@ -1328,8 +984,6 @@ Wire Wire Line
 Connection ~ 8700 4550
 Wire Wire Line
 	8700 4550 9900 4550
-Wire Notes Line style solid
-	11550 4600 11550 6650
 Text Notes 8850 4000 0    50   ~ 0
 Use either of\nthese opamps
 Wire Notes Line style solid
@@ -1352,30 +1006,6 @@ Wire Notes Line style solid
 	8250 3250 8300 3250
 Wire Notes Line style solid
 	8800 4050 8500 4350
-Wire Notes Line width 20 style solid
-	12200 5500 15150 5500
-Wire Notes Line width 20 style solid
-	15150 5500 15150 7150
-Wire Notes Line width 20 style solid
-	15150 7150 12200 7150
-Wire Notes Line width 20 style solid
-	12200 7150 12200 5500
-Wire Notes Line width 20 style solid
-	14050 5300 12200 5300
-Wire Notes Line width 20 style solid
-	12200 5300 12200 3550
-Wire Notes Line width 20 style solid
-	12200 3550 14050 3550
-Wire Notes Line width 20 style solid
-	14050 3550 14050 5300
-Wire Notes Line width 20 style solid
-	12200 7400 14600 7400
-Wire Notes Line width 20 style solid
-	14600 7400 14600 9450
-Wire Notes Line width 20 style solid
-	14600 9450 12200 9450
-Wire Notes Line width 20 style solid
-	12200 9450 12200 7400
 Wire Notes Line
 	6300 2500 9700 2500
 Wire Notes Line
@@ -1430,10 +1060,6 @@ Wire Notes Line
 	4450 9050 2700 9050
 Wire Notes Line
 	2700 8000 2700 9050
-Wire Notes Line style solid
-	10300 4600 11800 4600
-Wire Notes Line style solid
-	10300 8500 11800 8500
 Wire Notes Line width 20 style solid
 	9900 2050 1700 2050
 Wire Notes Line width 20 style solid
@@ -1478,42 +1104,6 @@ Wire Notes Line width 20 style solid
 	1700 1750 3650 1750
 Wire Notes Line width 20 style solid
 	9900 2050 9900 9450
-Wire Notes Line
-	12250 9400 14550 9400
-Wire Notes Line
-	14550 7600 14550 9400
-Wire Notes Line
-	12250 7450 12250 9400
-Wire Notes Line
-	12250 7450 13450 7450
-Wire Notes Line
-	14550 7600 12250 7600
-Wire Notes Line
-	13450 7450 13450 7600
-Wire Notes Line
-	15100 7100 12250 7100
-Wire Notes Line
-	15100 5700 15100 7100
-Wire Notes Line
-	12250 5550 12250 7100
-Wire Notes Line
-	12250 5700 15100 5700
-Wire Notes Line
-	13300 5550 13300 5700
-Wire Notes Line
-	12250 5550 13300 5550
-Wire Notes Line
-	14000 5250 12250 5250
-Wire Notes Line
-	14000 3750 14000 5250
-Wire Notes Line
-	13300 3600 13300 3750
-Wire Notes Line
-	12250 3600 13300 3600
-Wire Notes Line
-	12250 3600 12250 5250
-Wire Notes Line
-	12250 3750 14000 3750
 Wire Wire Line
 	8400 8700 8900 8700
 Wire Wire Line
@@ -1534,46 +1124,12 @@ Wire Wire Line
 Connection ~ 8900 8700
 Wire Wire Line
 	8900 8700 9900 8700
-Wire Notes Line style solid
-	14150 5050 14100 5100
-Wire Notes Line style solid
-	14700 5400 14650 5450
-Wire Notes Line style solid
-	14600 5400 14650 5450
-Wire Notes Line style solid
-	14150 5150 14100 5100
-Wire Notes Line style solid
-	14650 5200 14650 5450
-Wire Notes Line style solid
-	14100 5100 14350 5100
 Text Notes 8300 2950 0    50   ~ 0
 Alternative Opamps (needs testing):\nOPA350 (maybe)\nTSV911 (TI, maybe ST)\nMCP6291 (TI)\nTLV9061 (TI)
 Text Notes 5650 4600 0    50   ~ 0
 PWM@10kHz
 Text Notes 10350 4500 0    50   ~ 0
 Pinout:\n1: CATHODE1\n2: ANODE\n3: CATHODE2\n4: CATHODE3\n
-$Comp
-L LED_RGB:LED_ABGR D2
-U 1 1 5C8FCD01
-P 14150 6600
-F 0 "D2" H 14150 7000 50  0000 C CNN
-F 1 "LED_ABGR" H 14150 6200 50  0000 C CNN
-F 2 "LED-PLCC:PLCC4-3528" H 14150 7100 50  0001 C CNN
-F 3 "https://docs.broadcom.com/docs/AV02-4186EN" H 14150 6150 50  0001 C CNN
-	1    14150 6600
-	1    0    0    -1  
-$EndComp
 Text Notes 11950 10400 0    98   ~ 20
-Beer-Eye Pi v. 0.1a\nCC BY-SA H.-C. Ahlswede
-$Comp
-L Connector:Conn_01x04_Male J7
-U 1 1 5BC1EEAD
-P 12000 8450
-F 0 "J7" H 12000 8650 50  0000 C CNN
-F 1 "TransSensor" V 11900 8400 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 12000 8450 50  0001 C CNN
-F 3 "~" H 12000 8450 50  0001 C CNN
-	1    12000 8450
-	1    0    0    -1  
-$EndComp
+Beer-Eye Pi v. 0.1b\nCC BY-SA H.-C. Ahlswede
 $EndSCHEMATC

@@ -1,7 +1,0 @@
-(fp_lib_table
-  (lib (name VEML)(type KiCad)(uri ${KIPRJMOD}/lib/VEML.pretty)(options "")(descr ""))
-  (lib (name Photometer)(type KiCad)(uri ${KIPRJMOD}/lib/Photometer.pretty)(options "")(descr ""))
-  (lib (name Drill)(type KiCad)(uri ${KIPRJMOD}/lib/Drill.pretty)(options "")(descr ""))
-  (lib (name LED-PLCC)(type KiCad)(uri ${KIPRJMOD}/lib/LED-PLCC.pretty)(options "")(descr ""))
-  (lib (name Symbols)(type KiCad)(uri ${KIPRJMOD}/lib/Symbols.pretty)(options "")(descr ""))
-)

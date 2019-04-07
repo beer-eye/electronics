@@ -1,5 +1,0 @@
-(sym_lib_table
-  (lib (name VEML)(type Legacy)(uri ${KIPRJMOD}/lib/VEML.lib)(options "")(descr ""))
-  (lib (name Photometer)(type Legacy)(uri ${KIPRJMOD}/lib/Photometer.lib)(options "")(descr ""))
-  (lib (name LED_RGB)(type Legacy)(uri ${KIPRJMOD}/lib/LED_RGB.lib)(options "")(descr ""))
-)
